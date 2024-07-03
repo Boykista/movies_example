@@ -1,0 +1,20 @@
+targets:
+  $default:
+    builders:
+      source_gen|combining_builder:
+        options:
+          build_extensions:
+            "^lib/shared/entities/{{}}.dart": "lib/shared/entities/generated/{{}}.g.dart"
+      freezed:
+        enabled: true
+        generate_for:
+          include:
+            - lib/shared/entities/*.dart
+        options:
+          build_extensions:
+            "lib/shared/entities/{{}}.dart": "lib/shared/entities/generated/{{}}.freezed.dart"
+      json_serializable:
+        enabled: true
+        generate_for:
+          include:
+            - lib/shared/entities/*.dart

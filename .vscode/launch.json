@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Samsung",
+        "request": "launch",
+        "type": "dart",
+        "args": ["-d", "SM", "--dart-define-from-file","env.json"]
+      },
+      {
+        "name": "iPhone",
+        "request": "launch",
+        "type": "dart",
+        "args": ["-d", "iPhone", "--dart-define-from-file","env.json"]
+      },
+      {
+        "name": "iPad",
+        "request": "launch",
+        "type": "dart",
+        "args": ["-d", "iPad", "--dart-define-from-file","env.json"]
+      },
+    {
+        "name": "Android-Sim",
+        "request": "launch",
+        "type": "dart",
+        "args": ["-d", "sdk", "--dart-define-from-file","env.json"]
+      },
+      {
+        "name": "Chrome",
+        "request": "launch",
+        "type": "dart",
+        "args": ["-d", "Chrome","--web-renderer","html", "--dart-define-from-file","env.json"]
+      },
+    ]
+  }
